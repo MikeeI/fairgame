@@ -1,5 +1,43 @@
 # FairGame README
 
+```
+#Ich benutze sehr viel Code von diesem Projekt
+# https://github.com/Hari-Nagarajan/fairgame
+
+#Mit diesem Projekt Code kommt Ihr nicht viel weiter aber man kann Code erweitern und gerne kann ich euch auch das Teil von Code schicken
+
+#fairgame/stores/amazon.py erweitern und folgende Zeilen von Code zwischen 738 - 739 hinzuefungen und eure Bot wird 30% Artikeln kaufen sobald sie da sind
+
+
+
+
+
+
+
+
+try:
+x1intpath = "./ancestor::div/parent::div[@class = 'a-fixed-right-grid-inner']"
+warehouse30elem = atc_button.find_element_by_xpath(
+#"./ancestor::ancestor::ancestor::div[@class='a-row']"
+x1intpath
+)
+innerString = warehouse30elem.get_attribute('innerHTML')
+if 'Save 30% at checkout.' in innerString :
+log.debug(
+f"found 30% warehouse deal item"
+)
+elif '30% an der Kasse' in innerString:
+log.debug(
+f"found 30% warehouse deal item"
+)
+else:
+continue
+except:
+continue
+
+
+```
+
 # Table of Contents:
 * [About FairGame](#About-FairGame)
     * [Current Functionality](#Current-Functionality)
